@@ -19,3 +19,7 @@ INSERT INTO lista (nome, telefone, uf) VALUES
 ('Rafaela Santos', '1133828896', "DF");
 
 -- Add campo UF varchar 2, not null no script ja criado
+
+-- Selecionar as pessoas cujo estado é MG
+
+SELECT * FROM lista WHERE uf = 'MG';
