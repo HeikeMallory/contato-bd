@@ -8,5 +8,5 @@ USE contato;
 CREATE TABLE lista (
 id INT PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(50) NOT NULL,
-telefone VARCHAR(50)
+telefone VARCHAR(11)
 );
