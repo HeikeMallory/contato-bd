@@ -8,11 +8,14 @@ USE contato;
 CREATE TABLE lista (
 id INT PRIMARY KEY AUTO_INCREMENT,
 nome VARCHAR(50) NOT NULL,
-telefone VARCHAR(11)
+telefone VARCHAR(11),
+uf VARCHAR(2) NOT NULL
 );
 
 -- Colocar 3 contatos no banco de dados
-INSERT INTO lista (nome, telefone) VALUES 
-('Paulo André', '11981408868'),
-('José Almeida' , '11956329889'),
-('Rafaela Santos', '1133828896');
+INSERT INTO lista (nome, telefone, uf) VALUES 
+('Paulo André', '11981408868', "SP"),
+('José Almeida' , '11956329889', "MG"),
+('Rafaela Santos', '1133828896', "DF");
+
+-- Add campo UF varchar 2, not null no script ja criado
